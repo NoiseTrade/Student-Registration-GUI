@@ -213,7 +213,7 @@ public class StudentGui extends javax.swing.JFrame {
         if(idTextField.getText().equals("")||nameTextField.getText().equals("")||surnameTextField.getText().equals("")||ageTextField.getText().equals("")){
             JOptionPane.showMessageDialog(this, "Please enter data");
             
-            //code to take data from text fields and populate student table
+            // take data from text fields and populate student table
         }else{
             
             ArrayList<Student> studentArrayList = new ArrayList<Student>();
@@ -260,6 +260,7 @@ public class StudentGui extends javax.swing.JFrame {
             
             model.addRow(studentInfo);
             
+            // clear text boxes when add button is used
             idTextField.setText("");
             nameTextField.setText("");
             surnameTextField.setText("");
@@ -276,7 +277,7 @@ public class StudentGui extends javax.swing.JFrame {
 
     private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
        
-        //code to save the data populated on the student table
+        // save the data populated on the student table
         try{
             
             //set the source of where the file data will be written
@@ -342,6 +343,7 @@ public class StudentGui extends javax.swing.JFrame {
       
     }//GEN-LAST:event_loadButtonActionPerformed
 
+    //have fun
     private void coolBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coolBtnActionPerformed
         // TODO add your handling code here:
         
