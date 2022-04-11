@@ -100,7 +100,7 @@ public class StudentTest {
       
     }
 
-    //TESTING FOR GETTERS
+    //TESTING FOR SETTERS
 
        @Test
      public void testsetStudentID() {
